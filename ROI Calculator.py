@@ -48,7 +48,7 @@ expense4 = Expenses('HOA', 0, 0)
 expense4.calculate_total_monthly_expenses(expense4.price, expense4.quantity)
 # # print(item4.calculate_total_monthly_income(item4.price, item4.quantity))
 
-expense5 = Expenses('Lawn/Snow', 0, 0)
+expense5 = Expenses('Lawn', 0, 0)
 expense5.calculate_total_monthly_expenses(expense5.price, expense5.quantity)
 # # print(item5.calculate_total_monthly_income(item5.price, item5.quantity))
 
@@ -124,7 +124,7 @@ MiscOther = 0
 
 def CashonCashROI(DownPayment, ClosingCosts, RehabBudget, MiscOther):
     CashonCashROI = (DownPayment+ClosingCosts+RehabBudget+MiscOther) 
-    print(CashonCashROI)
+    print("Cash on Cash ROI = " ,CashonCashROI)
 
 CashonCashROI(DownPayment, ClosingCosts, RehabBudget, MiscOther)
 
@@ -133,15 +133,49 @@ Expenses = 1610 #pull from the math above
 
 def MonthlyCashFlow(Income, Expenses):
     MonthlyCashFlow = (Income-Expenses)
-    print(MonthlyCashFlow)
+    print( "Monthly Cash Flow = " ,MonthlyCashFlow)
 
 MonthlyCashFlow(Income,Expenses)
 
-Investment = 50000
 AnnualCashFlow = 4680
+Investment = 50000
 
-def AnnualCashFlow(AnnualCashFlow, Investment):
-    AnnualCashFlow = (AnnualCashFlow/Investment)
-    print(AnnualCashFlow)
+def CashonCashROIPercentage(AnnualCashFlow, Investment):
+    CashonCashROIPercentage = (AnnualCashFlow/Investment)*100
+    print("Cash on Cash ROI % = " ,CashonCashROIPercentage)
 
-AnnualCashFlow(AnnualCashFlow, Investment)
+CashonCashROIPercentage(AnnualCashFlow, Investment)
+
+Tax = 150
+Insurance = 100
+Utilities = 0
+Electric= 0
+Water = 0
+Sewer = 0
+Garbage = 0
+Gas = 0
+HOA = 0
+Lawn= 0
+Vacancy = 100
+Repairs = 100
+CapEx = 100
+PropertyManager = 200
+Mortgage = 860
+TotalMonthlyExpenses = 1610
+
+def MonthlyExpenses(Tax, Insurance, Utilities, HOA, Lawn, Vacancy, Repairs, CapEx, PropertyManager, Mortgage):
+    MonthlyExpenses = (Tax+Insurance+Utilities+HOA+Lawn+Vacancy+Repairs+CapEx+PropertyManager+Mortgage)
+    print("Monthly Expenses = " ,MonthlyExpenses)
+
+MonthlyExpenses(Tax, Insurance, Utilities, HOA, Lawn, Vacancy, Repairs, CapEx, PropertyManager, Mortgage)
+
+RentalIncome = 2000
+Laundry = 0
+Storage = 0
+Misc = 0
+
+def MonthlyIncome(RentalIncome, Laundry, Storage, Misc):
+    MonthlyIncome = (RentalIncome+Laundry+Storage+Misc)
+    print("Monthly Income = " ,MonthlyIncome)
+
+MonthlyIncome(RentalIncome, Laundry, Storage, Misc)

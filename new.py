@@ -5,22 +5,22 @@
 # Misc = 
 # TotalMonthlyIncome=
 # Expenses =
-# Tax = 
-# Insurance =
-# Utilities = 
-# Electric=
-# Water =
-# Sewer =
-# Garbage =
-# Gas =
-# HOA =
-# Lawn/Snow=
-# Vacancy =
-# Repairs =
-# CapEx =
-# PropertyManager
-# Mortgage
-# TotalMonthlyExpenses
+Tax = 
+Insurance =
+Utilities = 
+Electric=
+Water =
+Sewer =
+Garbage =
+Gas =
+HOA =
+Lawn/Snow=
+Vacancy =
+Repairs =
+CapEx =
+PropertyManager
+Mortgage
+TotalMonthlyExpenses
 
 # CashFlow=
 # TotalMonthlyCashflow
