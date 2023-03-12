@@ -85,7 +85,6 @@ def __add__ (self, name, total):
         return self.name + self.price * self.quantity
 print(item4.name, item4.price)
 
-
 def __add__ (self, name, total):
         return self.name + self.price * self.quantity
 print(expense1.name, expense1.price)
@@ -117,3 +116,32 @@ def __add__ (self, name, total):
         return self.name + self.price * self.quantity
 print(expense10.name, expense10.price)
 
+DownPayment = 40000
+ClosingCosts = 3000
+RehabBudget = 7000
+MiscOther = 0
+
+
+def CashonCashROI(DownPayment, ClosingCosts, RehabBudget, MiscOther):
+    CashonCashROI = (DownPayment+ClosingCosts+RehabBudget+MiscOther) 
+    print(CashonCashROI)
+
+CashonCashROI(DownPayment, ClosingCosts, RehabBudget, MiscOther)
+
+Income = 2000 #pull from the math above
+Expenses = 1610 #pull from the math above
+
+def MonthlyCashFlow(Income, Expenses):
+    MonthlyCashFlow = (Income-Expenses)
+    print(MonthlyCashFlow)
+
+MonthlyCashFlow(Income,Expenses)
+
+Investment = 50000
+AnnualCashFlow = 4680
+
+def AnnualCashFlow(AnnualCashFlow, Investment):
+    AnnualCashFlow = (AnnualCashFlow/Investment)
+    print(AnnualCashFlow)
+
+AnnualCashFlow(AnnualCashFlow, Investment)
