@@ -163,6 +163,29 @@ PropertyManager = 200
 Mortgage = 860
 TotalMonthlyExpenses = 1610
 
+def UtilitiesExpense(Electric, Water, Sewer, Garbage, Gas):
+    UtilitiesExpense = (Electric+Water+Sewer+Garbage+Gas)
+    print("Total Expenses = " ,UtilitiesExpense)
+
+UtilitiesExpense(Electric, Water, Sewer, Garbage, Gas)
+
+Tax = 150
+Insurance = 100
+Utilities = 0
+Electric= 0
+Water = 0
+Sewer = 0
+Garbage = 0
+Gas = 0
+HOA = 0
+Lawn= 0
+Vacancy = 100
+Repairs = 100
+CapEx = 100
+PropertyManager = 200
+Mortgage = 860
+
+
 def MonthlyExpenses(Tax, Insurance, Utilities, HOA, Lawn, Vacancy, Repairs, CapEx, PropertyManager, Mortgage):
     MonthlyExpenses = (Tax+Insurance+Utilities+HOA+Lawn+Vacancy+Repairs+CapEx+PropertyManager+Mortgage)
     print("Monthly Expenses = " ,MonthlyExpenses)
